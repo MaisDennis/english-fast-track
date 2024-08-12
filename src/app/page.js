@@ -1,6 +1,8 @@
 import Image from "next/image";
 import styles from "./page.module.scss";
-import { FaStar, FaQuestion } from 'react-icons/fa'
+import { FaStar, FaQuestion, FaPhoneAlt, FaMicrophoneAlt } from 'react-icons/fa'
+import { FaMessage, FaRegMessage } from 'react-icons/fa6'
+
 import { RiQuestionAnswerLine } from 'react-icons/ri'
 // *****************************************************************************
 
@@ -9,6 +11,7 @@ export default function Home() {
   // ***************************************************************************
   return (
     <main className={styles.main}>
+      {/* hero****************************************************************************************************** */}
       <div className={styles.hero_div}>
         <div className={styles.header}>
           <Image src="/logo.svg" alt="English Fast-track Logo" width="300" height="35"/>
@@ -60,7 +63,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      {/* ********************************************************************************************************** */}
+      {/* avatar**************************************************************************************************** */}
       <div className={styles.sub_hero_01_div}>
         <div className={styles.body}>
           <div className={styles.column_01}>
@@ -81,12 +84,7 @@ export default function Home() {
                 Methods to communicate easily with native English speakers and be understood by everyone.
               </p>
             </div>
-            <Image
-              src="/message.svg" 
-              alt="message icon" 
-              width="70" 
-              height="70"
-            />
+            <FaMessage color={'000'} size={50}/>
           </div>
           <div className={styles.column_01}>
             <div className={styles.picture_div}>
@@ -106,12 +104,7 @@ export default function Home() {
                 Understand clearly what native speakers are saying... and get rid of subtitles in movies and series!
               </p>
             </div>
-            <Image
-              src="/phone.svg" 
-              alt="phone icon" 
-              width="70" 
-              height="70"
-            />
+            <FaPhoneAlt color={'000'} size={50}/>
           </div>
           <div className={styles.column_01}>
             <div className={styles.picture_div}>
@@ -132,17 +125,12 @@ export default function Home() {
                 and in interviews.
               </p>
             </div>
-            <Image
-              src="/mic.svg" 
-              alt="mic icon" 
-              width="80" 
-              height="80"
-            />
+            <FaMicrophoneAlt color={'000'} size={50}/>
           </div>
 
         </div>
       </div>
-      {/* ********************************************************************************************************** */}
+      {/* hey I'm Dennis******************************************************************************************** */}
       <div className={styles.sub_hero_02_div}>
         <div className={styles.body}>
           <div className={styles.column_01}>
@@ -190,7 +178,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      {/* ********************************************************************************************************** */}
+      {/* testimonials********************************************************************************************** */}
       <div className={styles.sub_hero_03_div}>
         <div className={styles.body}>
           <div className={styles.row_01}>
@@ -345,7 +333,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      {/* ********************************************************************************************************** */}
+      {/* faq******************************************************************************************************* */}
       <div className={styles.sub_hero_04_div}>
         <div className={styles.body}>
           <div className={styles.column_01}>
@@ -430,7 +418,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      {/* ********************************************************************************************************** */}
+      {/* cta******************************************************************************************************* */}
       <div className={styles.sub_hero_05_div}>
         <div className={styles.body}>
           <div className={styles.column_01}>

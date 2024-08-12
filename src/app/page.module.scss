@@ -15,6 +15,7 @@
   background-image: url('/hero_background.png');
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 0 5vw;
   // background-color: lightcoral;
 
   .header {
@@ -155,8 +156,9 @@
 .sub_hero_01_div {
   display: flex;
   flex-direction: column;
-  height: 95vh;
+  height: 90vh;
   width: 100%;
+  padding: 0 8vw;
   background-color: #fff;
 
   .body {
@@ -171,7 +173,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     height: 70vh;
     width: 100%;
     padding: 0 3rem;
@@ -184,8 +186,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height:16.25rem;
-    width:16.25rem;
+    height:16rem;
+    width:16rem;
     border-radius: 50%;
     overflow: hidden;
     margin-bottom: 1.5rem;
@@ -202,6 +204,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 1rem;
     // background-color: lightgoldenrodyellow;
   }
 
@@ -225,20 +228,29 @@
 .sub_hero_02_div {
   display: flex;
   flex-direction: column;
-  
-  height: 95vh;
+  overflow: hidden;
+  height: 80vh;
   width: 100%;
-  background-image: url('/sub_hero_02_background.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
   background-color: #fff;
 
   .body {
+    position: relative;
     display: flex;
     flex-direction: row;
     height: 100%;
     width: 100%;
     // background-color: lightblue;
+  }
+  .body::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url('/sub_hero_02_background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.4;
+    z-index: 1;
   }
 
   .column_01 {
@@ -248,6 +260,7 @@
     justify-content: center;
     height: 100%;
     width: 50%;
+    z-index: 2;
     // background-color: lightcoral;
   }
 
@@ -257,6 +270,8 @@
     align-items: center;
     justify-content: center;
     width: 32.5rem;
+    width: auto;
+    padding: 8vh 0 8vh 8vw;
   }
 
   .p_01 {
@@ -279,6 +294,7 @@
     justify-content: center;
     height: 100%;
     width: 50%;
+    z-index: 2;
     // background-color: lightgrey;
   }
 
@@ -291,7 +307,8 @@
 
   .picture_div {
     height: auto;
-    padding: 1.5rem;
+    // padding: 1.5rem;
+    padding: 8vh 8vw 8vh 0;
     // background-color: lightgreen;
   }
 
@@ -324,10 +341,13 @@
 .sub_hero_03_div {
   display: flex;
   flex-direction: column;
-  height: 95vh;
+  height: 80vh;
   width: 100%;
-  background-color: #000;
-
+  padding: 0 5vw;
+  background-color: #fff;
+  // background-color: #F5F5F5;
+  // background-color: #FFF3E6;
+  
   .body {
     display: flex;
     flex-direction: column;
@@ -345,6 +365,8 @@
     width: 100%;
     padding: 3rem 0 1rem;
     background-color: #F5F5F5;
+    background-color: #fff;
+  
   }
 
   .column_01 {
@@ -402,6 +424,7 @@
   flex-direction: column;
   height: 95vh;
   width: 100%;
+  padding: 0 5vw;
   background-color: #fff;
 
   .body {
@@ -417,9 +440,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50%;
+    width: 55%;
     // border: 1px solid #666;
-  //   background-color: lightgreen;
+    // background-color: lightgreen;
   }
 
   .title {
